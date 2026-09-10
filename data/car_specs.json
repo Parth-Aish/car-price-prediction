@@ -1,0 +1,1034 @@
+{
+  "Audi": {
+    "A4": {
+      "engine": 1968,
+      "mileage": 17.11,
+      "power": 167.62,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "A6": {
+      "engine": 1968,
+      "mileage": 17.68,
+      "power": 174.33,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "A8": {
+      "engine": 2967,
+      "mileage": 11.8,
+      "power": 246.7,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Q7": {
+      "engine": 2967,
+      "mileage": 12.07,
+      "power": 241.4,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  },
+  "BMW": {
+    "3": {
+      "engine": 1995,
+      "mileage": 18.88,
+      "power": 184.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "5": {
+      "engine": 1995,
+      "mileage": 18.12,
+      "power": 190.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "6": {
+      "engine": 2993,
+      "mileage": 14.28,
+      "power": 261.4,
+      "seats": 4,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "7": {
+      "engine": 2993,
+      "mileage": 16.46,
+      "power": 258.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "X1": {
+      "engine": 1995,
+      "mileage": 19.62,
+      "power": 188.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "X3": {
+      "engine": 1995,
+      "mileage": 16.09,
+      "power": 184.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "X4": {
+      "engine": 1995,
+      "mileage": 16.78,
+      "power": 190.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "X5": {
+      "engine": 2993,
+      "mileage": 15.3,
+      "power": 258.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Z4": {
+      "engine": 2979,
+      "mileage": 10.37,
+      "power": 303.86,
+      "seats": 2,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Bentley": {
+    "Continental": {
+      "engine": 5998,
+      "mileage": 8.6,
+      "power": 600.0,
+      "seats": 4,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Datsun": {
+    "GO": {
+      "engine": 1198,
+      "mileage": 19.83,
+      "power": 67.0,
+      "seats": 7,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "RediGO": {
+      "engine": 799,
+      "mileage": 22.7,
+      "power": 53.64,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "redi-GO": {
+      "engine": 899,
+      "mileage": 21.205,
+      "power": 60.345,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    }
+  },
+  "Ferrari": {
+    "GTC4Lusso": {
+      "engine": 3855,
+      "mileage": 4.0,
+      "power": 601.0,
+      "seats": 4,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Force": {
+    "Gurkha": {
+      "engine": 2596,
+      "mileage": 17.0,
+      "power": 80.8,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    }
+  },
+  "Ford": {
+    "Aspire": {
+      "engine": 1498,
+      "mileage": 25.83,
+      "power": 99.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Ecosport": {
+      "engine": 1498,
+      "mileage": 22.7,
+      "power": 98.96,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Endeavour": {
+      "engine": 3198,
+      "mileage": 10.91,
+      "power": 197.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Figo": {
+      "engine": 1399,
+      "mileage": 20.0,
+      "power": 68.05,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Freestyle": {
+      "engine": 1194,
+      "mileage": 19.0,
+      "power": 94.68,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    }
+  },
+  "Honda": {
+    "Amaze": {
+      "engine": 1199,
+      "mileage": 19.5,
+      "power": 88.76,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "CR": {
+      "engine": 2354,
+      "mileage": 12.0,
+      "power": 187.4,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    },
+    "CR-V": {
+      "engine": 2354,
+      "mileage": 12.0,
+      "power": 152.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    },
+    "City": {
+      "engine": 1497,
+      "mileage": 17.7,
+      "power": 117.3,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Civic": {
+      "engine": 1799,
+      "mileage": 13.5,
+      "power": 130.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Jazz": {
+      "engine": 1199,
+      "mileage": 18.7,
+      "power": 88.7,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "WR-V": {
+      "engine": 1498,
+      "mileage": 25.5,
+      "power": 98.6,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    }
+  },
+  "Hyundai": {
+    "Aura": {
+      "engine": 1197,
+      "mileage": 20.5,
+      "power": 81.86,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Creta": {
+      "engine": 1582,
+      "mileage": 19.67,
+      "power": 121.3,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Elantra": {
+      "engine": 1582,
+      "mileage": 16.3,
+      "power": 126.24,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Grand": {
+      "engine": 1197,
+      "mileage": 18.9,
+      "power": 81.86,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Santro": {
+      "engine": 1086,
+      "mileage": 17.92,
+      "power": 62.1,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Tucson": {
+      "engine": 1995,
+      "mileage": 16.38,
+      "power": 182.46,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Venue": {
+      "engine": 998,
+      "mileage": 18.27,
+      "power": 118.35,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Verna": {
+      "engine": 1582,
+      "mileage": 19.08,
+      "power": 121.4,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "i10": {
+      "engine": 1197,
+      "mileage": 20.36,
+      "power": 78.9,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "i20": {
+      "engine": 1197,
+      "mileage": 18.6,
+      "power": 81.86,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    }
+  },
+  "ISUZU": {
+    "MUX": {
+      "engine": 2999,
+      "mileage": 13.8,
+      "power": 175.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  },
+  "Isuzu": {
+    "D-Max": {
+      "engine": 2499,
+      "mileage": 12.4,
+      "power": 134.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "MUX": {
+      "engine": 2999,
+      "mileage": 13.8,
+      "power": 174.57,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  },
+  "Jaguar": {
+    "F-PACE": {
+      "engine": 1999,
+      "mileage": 16.38,
+      "power": 177.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "XE": {
+      "engine": 1999,
+      "mileage": 13.6,
+      "power": 177.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "XF": {
+      "engine": 2179,
+      "mileage": 16.36,
+      "power": 187.7,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  },
+  "Jeep": {
+    "Compass": {
+      "engine": 1956,
+      "mileage": 17.1,
+      "power": 170.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Wrangler": {
+      "engine": 3604,
+      "mileage": 9.5,
+      "power": 280.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Kia": {
+    "Carnival": {
+      "engine": 2199,
+      "mileage": 14.11,
+      "power": 197.2,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Seltos": {
+      "engine": 1493,
+      "mileage": 16.8,
+      "power": 113.4,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    }
+  },
+  "Land Rover": {
+    "Rover": {
+      "engine": 2179,
+      "mileage": 12.65,
+      "power": 187.7,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  },
+  "Lexus": {
+    "ES": {
+      "engine": 2487,
+      "mileage": 22.37,
+      "power": 214.56,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    },
+    "NX": {
+      "engine": 2499,
+      "mileage": 18.32,
+      "power": 194.3,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    },
+    "RX": {
+      "engine": 3456,
+      "mileage": 18.8,
+      "power": 258.905,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "MG": {
+    "Hector": {
+      "engine": 1451,
+      "mileage": 15.81,
+      "power": 141.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    }
+  },
+  "Mahindra": {
+    "Alturas": {
+      "engine": 2157,
+      "mileage": 12.05,
+      "power": 178.49,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Bolero": {
+      "engine": 2523,
+      "mileage": 15.96,
+      "power": 63.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "KUV": {
+      "engine": 1198,
+      "mileage": 21.735,
+      "power": 79.5,
+      "seats": 6,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "KUV100": {
+      "engine": 1198,
+      "mileage": 25.32,
+      "power": 77.0,
+      "seats": 6,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Marazzo": {
+      "engine": 1497,
+      "mileage": 17.3,
+      "power": 121.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Scorpio": {
+      "engine": 2179,
+      "mileage": 15.4,
+      "power": 120.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Thar": {
+      "engine": 2498,
+      "mileage": 16.55,
+      "power": 105.0,
+      "seats": 6,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "XUV300": {
+      "engine": 1197,
+      "mileage": 17.0,
+      "power": 110.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "XUV500": {
+      "engine": 2179,
+      "mileage": 15.1,
+      "power": 140.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    }
+  },
+  "Maruti": {
+    "Alto": {
+      "engine": 796,
+      "mileage": 22.74,
+      "power": 47.3,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Baleno": {
+      "engine": 1197,
+      "mileage": 21.4,
+      "power": 83.1,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Celerio": {
+      "engine": 998,
+      "mileage": 23.1,
+      "power": 67.04,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Ciaz": {
+      "engine": 1310,
+      "mileage": 26.21,
+      "power": 89.8,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Dzire LXI": {
+      "engine": 1197,
+      "mileage": 23.26,
+      "power": 88.5,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Dzire VXI": {
+      "engine": 1197,
+      "mileage": 23.26,
+      "power": 88.5,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Dzire ZXI": {
+      "engine": 1197,
+      "mileage": 23.26,
+      "power": 88.5,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Eeco": {
+      "engine": 1196,
+      "mileage": 15.37,
+      "power": 73.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Ertiga": {
+      "engine": 1248,
+      "mileage": 20.77,
+      "power": 88.76,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Ignis": {
+      "engine": 1197,
+      "mileage": 20.89,
+      "power": 81.8,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "S-Presso": {
+      "engine": 998,
+      "mileage": 21.7,
+      "power": 67.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Swift": {
+      "engine": 1248,
+      "mileage": 22.9,
+      "power": 74.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Swift Dzire": {
+      "engine": 1248,
+      "mileage": 21.21,
+      "power": 74.02,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Vitara": {
+      "engine": 1248,
+      "mileage": 24.3,
+      "power": 88.5,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Wagon R": {
+      "engine": 998,
+      "mileage": 20.51,
+      "power": 67.04,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "XL6": {
+      "engine": 1462,
+      "mileage": 19.01,
+      "power": 103.2,
+      "seats": 6,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    }
+  },
+  "Maserati": {
+    "Ghibli": {
+      "engine": 2987,
+      "mileage": 20.41,
+      "power": 271.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Quattroporte": {
+      "engine": 2987,
+      "mileage": 19.23,
+      "power": 270.88,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  },
+  "Mercedes-AMG": {
+    "C": {
+      "engine": 2996,
+      "mileage": 11.9,
+      "power": 362.07,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Mercedes-Benz": {
+    "C-Class": {
+      "engine": 2143,
+      "mileage": 14.84,
+      "power": 170.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "CLS": {
+      "engine": 2143,
+      "mileage": 19.4,
+      "power": 204.0,
+      "seats": 4,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "E-Class": {
+      "engine": 2143,
+      "mileage": 13.0,
+      "power": 203.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "GL-Class": {
+      "engine": 2987,
+      "mileage": 11.5,
+      "power": 245.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "GLS": {
+      "engine": 2987,
+      "mileage": 11.0,
+      "power": 258.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "S-Class": {
+      "engine": 2987,
+      "mileage": 13.5,
+      "power": 282.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  },
+  "Mini": {
+    "Cooper": {
+      "engine": 1998,
+      "mileage": 17.33,
+      "power": 181.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Nissan": {
+    "Kicks": {
+      "engine": 1461,
+      "mileage": 16.810000000000002,
+      "power": 108.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "X-Trail": {
+      "engine": 1995,
+      "mileage": 14.42,
+      "power": 147.6,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    }
+  },
+  "Porsche": {
+    "Cayenne": {
+      "engine": 2967,
+      "mileage": 14.715,
+      "power": 240.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Macan": {
+      "engine": 1984,
+      "mileage": 13.6,
+      "power": 250.5,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    },
+    "Panamera": {
+      "engine": 4806,
+      "mileage": 7.5,
+      "power": 394.3,
+      "seats": 4,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  },
+  "Renault": {
+    "Duster": {
+      "engine": 1461,
+      "mileage": 19.87,
+      "power": 83.8,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "KWID": {
+      "engine": 999,
+      "mileage": 24.04,
+      "power": 67.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Triber": {
+      "engine": 999,
+      "mileage": 20.0,
+      "power": 72.0,
+      "seats": 7,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    }
+  },
+  "Rolls-Royce": {
+    "Ghost": {
+      "engine": 6592,
+      "mileage": 10.2,
+      "power": 563.0,
+      "seats": 4,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Skoda": {
+    "Octavia": {
+      "engine": 1896,
+      "mileage": 18.7,
+      "power": 141.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "Rapid": {
+      "engine": 1598,
+      "mileage": 20.5,
+      "power": 103.52,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Superb": {
+      "engine": 1798,
+      "mileage": 13.7,
+      "power": 157.75,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Tata": {
+    "Altroz": {
+      "engine": 1199,
+      "mileage": 19.05,
+      "power": 84.82,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Harrier": {
+      "engine": 1956,
+      "mileage": 17.0,
+      "power": 138.1,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Hexa": {
+      "engine": 2179,
+      "mileage": 17.6,
+      "power": 153.86,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Nexon": {
+      "engine": 1497,
+      "mileage": 21.5,
+      "power": 108.5,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Safari": {
+      "engine": 2179,
+      "mileage": 14.0,
+      "power": 138.1,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Tiago": {
+      "engine": 1199,
+      "mileage": 23.84,
+      "power": 84.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Tigor": {
+      "engine": 1199,
+      "mileage": 20.3,
+      "power": 84.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    }
+  },
+  "Toyota": {
+    "Camry": {
+      "engine": 2494,
+      "mileage": 19.16,
+      "power": 164.7,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    },
+    "Fortuner": {
+      "engine": 2982,
+      "mileage": 12.55,
+      "power": 171.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Glanza": {
+      "engine": 1197,
+      "mileage": 21.01,
+      "power": 81.8,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Innova": {
+      "engine": 2494,
+      "mileage": 12.99,
+      "power": 102.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    },
+    "Yaris": {
+      "engine": 1496,
+      "mileage": 17.8,
+      "power": 105.5,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Automatic"
+    }
+  },
+  "Volkswagen": {
+    "Polo": {
+      "engine": 1199,
+      "mileage": 17.21,
+      "power": 75.0,
+      "seats": 5,
+      "fuel_type": "Petrol",
+      "transmission": "Manual"
+    },
+    "Vento": {
+      "engine": 1598,
+      "mileage": 20.34,
+      "power": 103.6,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Manual"
+    }
+  },
+  "Volvo": {
+    "S90": {
+      "engine": 1969,
+      "mileage": 18.0,
+      "power": 190.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "XC": {
+      "engine": 2400,
+      "mileage": 11.1,
+      "power": 200.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "XC60": {
+      "engine": 1985,
+      "mileage": 14.7,
+      "power": 181.0,
+      "seats": 5,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    },
+    "XC90": {
+      "engine": 1969,
+      "mileage": 17.2,
+      "power": 235.0,
+      "seats": 7,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic"
+    }
+  }
+}

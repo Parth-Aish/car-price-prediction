@@ -1,0 +1,476 @@
+{
+  "model_name": "Extra Trees",
+  "model_version": "1.0",
+  "training_date": "2026-09-10T11:19:48.120805+00:00",
+  "dataset_path": "C:\\Users\\Parth\\Downloads\\Car Price Prediction With UI\\data\\cardekho_dataset.csv",
+  "dataset_rows": 15411,
+  "n_features": 13,
+  "categorical_features": [
+    "brand",
+    "model",
+    "seller_type",
+    "fuel_type",
+    "transmission_type"
+  ],
+  "numerical_features": [
+    "vehicle_age",
+    "km_driven",
+    "mileage",
+    "engine",
+    "max_power",
+    "seats",
+    "power_per_cc",
+    "km_per_year"
+  ],
+  "target": "selling_price",
+  "log_transform_target": true,
+  "test_metrics": {
+    "MAE": 87175.0482,
+    "RMSE": 156500.4103,
+    "R2": 0.9544,
+    "MAPE": 12.9504
+  },
+  "cv_r2_mean": 0.9356,
+  "cv_r2_std": 0.0015,
+  "inference_latency_ms": 7.988,
+  "composite_score": 0.9385,
+  "train_time_seconds": 86.58,
+  "all_model_results": [
+    {
+      "name": "Extra Trees",
+      "metrics": {
+        "MAE": 87175.0482,
+        "RMSE": 156500.4103,
+        "R2": 0.9544,
+        "MAPE": 12.9504
+      },
+      "cv_r2_mean": 0.9356,
+      "cv_r2_std": 0.0015,
+      "composite_score": 0.9385
+    },
+    {
+      "name": "Gradient Boosting",
+      "metrics": {
+        "MAE": 88631.6546,
+        "RMSE": 160312.5245,
+        "R2": 0.9522,
+        "MAPE": 12.7723
+      },
+      "cv_r2_mean": 0.9394,
+      "cv_r2_std": 0.0015,
+      "composite_score": 0.938
+    },
+    {
+      "name": "Random Forest",
+      "metrics": {
+        "MAE": 90910.4929,
+        "RMSE": 168766.6278,
+        "R2": 0.947,
+        "MAPE": 13.163
+      },
+      "cv_r2_mean": 0.9347,
+      "cv_r2_std": 0.0022,
+      "composite_score": 0.9328
+    },
+    {
+      "name": "HistGradient Boosting",
+      "metrics": {
+        "MAE": 92780.7153,
+        "RMSE": 171025.1878,
+        "R2": 0.9456,
+        "MAPE": 12.9827
+      },
+      "cv_r2_mean": 0.9396,
+      "cv_r2_std": 0.0023,
+      "composite_score": 0.9323
+    },
+    {
+      "name": "Linear Regression",
+      "metrics": {
+        "MAE": 109183.8556,
+        "RMSE": 217928.4004,
+        "R2": 0.9117,
+        "MAPE": 14.3328
+      },
+      "cv_r2_mean": 0.9284,
+      "cv_r2_std": 0.0042,
+      "composite_score": 0.9091
+    },
+    {
+      "name": "Ridge Regression",
+      "metrics": {
+        "MAE": 110079.0673,
+        "RMSE": 218268.8878,
+        "R2": 0.9114,
+        "MAPE": 14.3788
+      },
+      "cv_r2_mean": 0.928,
+      "cv_r2_std": 0.0042,
+      "composite_score": 0.9088
+    },
+    {
+      "name": "Lasso Regression",
+      "metrics": {
+        "MAE": 398589.3746,
+        "RMSE": 755695.7282,
+        "R2": -0.0622,
+        "MAPE": 59.2895
+      },
+      "cv_r2_mean": -0.0007,
+      "cv_r2_std": 0.0005,
+      "composite_score": 0.3957
+    }
+  ],
+  "valid_brands": [
+    "Audi",
+    "BMW",
+    "Bentley",
+    "Datsun",
+    "Ferrari",
+    "Force",
+    "Ford",
+    "Honda",
+    "Hyundai",
+    "Isuzu",
+    "Jaguar",
+    "Jeep",
+    "Kia",
+    "Land Rover",
+    "Lexus",
+    "MG",
+    "Mahindra",
+    "Maruti",
+    "Maserati",
+    "Mercedes-Benz",
+    "Mini",
+    "Nissan",
+    "Porsche",
+    "Renault",
+    "Rolls-Royce",
+    "Skoda",
+    "Tata",
+    "Toyota",
+    "Volkswagen",
+    "Volvo"
+  ],
+  "valid_models": [
+    "3",
+    "5",
+    "6",
+    "7",
+    "A4",
+    "A6",
+    "A8",
+    "Alto",
+    "Altroz",
+    "Alturas",
+    "Amaze",
+    "Aspire",
+    "Aura",
+    "Baleno",
+    "Bolero",
+    "C",
+    "C-Class",
+    "CLS",
+    "CR",
+    "CR-V",
+    "Camry",
+    "Carnival",
+    "Cayenne",
+    "Celerio",
+    "Ciaz",
+    "City",
+    "Civic",
+    "Compass",
+    "Continental",
+    "Cooper",
+    "Creta",
+    "D-Max",
+    "Duster",
+    "Dzire LXI",
+    "Dzire VXI",
+    "Dzire ZXI",
+    "E-Class",
+    "ES",
+    "Ecosport",
+    "Eeco",
+    "Elantra",
+    "Endeavour",
+    "Ertiga",
+    "F-PACE",
+    "Figo",
+    "Fortuner",
+    "Freestyle",
+    "GL-Class",
+    "GLS",
+    "GO",
+    "GTC4Lusso",
+    "Ghibli",
+    "Ghost",
+    "Glanza",
+    "Grand",
+    "Gurkha",
+    "Harrier",
+    "Hector",
+    "Hexa",
+    "Ignis",
+    "Innova",
+    "Jazz",
+    "KUV",
+    "KUV100",
+    "KWID",
+    "Kicks",
+    "MUX",
+    "Macan",
+    "Marazzo",
+    "NX",
+    "Nexon",
+    "Octavia",
+    "Panamera",
+    "Polo",
+    "Q7",
+    "Quattroporte",
+    "RX",
+    "Rapid",
+    "RediGO",
+    "Rover",
+    "S-Class",
+    "S-Presso",
+    "S90",
+    "Safari",
+    "Santro",
+    "Scorpio",
+    "Seltos",
+    "Superb",
+    "Swift",
+    "Swift Dzire",
+    "Thar",
+    "Tiago",
+    "Tigor",
+    "Triber",
+    "Tucson",
+    "Vento",
+    "Venue",
+    "Verna",
+    "Vitara",
+    "WR-V",
+    "Wagon R",
+    "Wrangler",
+    "X-Trail",
+    "X1",
+    "X3",
+    "X4",
+    "X5",
+    "XC",
+    "XC60",
+    "XC90",
+    "XE",
+    "XF",
+    "XL6",
+    "XUV300",
+    "XUV500",
+    "Yaris",
+    "Z4",
+    "i10",
+    "i20",
+    "redi-GO"
+  ],
+  "brand_model_map": {
+    "Audi": [
+      "A4",
+      "A6",
+      "A8",
+      "Q7"
+    ],
+    "BMW": [
+      "3",
+      "5",
+      "6",
+      "7",
+      "X1",
+      "X3",
+      "X4",
+      "X5",
+      "Z4"
+    ],
+    "Bentley": [
+      "Continental"
+    ],
+    "Datsun": [
+      "GO",
+      "RediGO",
+      "redi-GO"
+    ],
+    "Ferrari": [
+      "GTC4Lusso"
+    ],
+    "Force": [
+      "Gurkha"
+    ],
+    "Ford": [
+      "Aspire",
+      "Ecosport",
+      "Endeavour",
+      "Figo",
+      "Freestyle"
+    ],
+    "Honda": [
+      "Amaze",
+      "CR",
+      "CR-V",
+      "City",
+      "Civic",
+      "Jazz",
+      "WR-V"
+    ],
+    "Hyundai": [
+      "Aura",
+      "Creta",
+      "Elantra",
+      "Grand",
+      "Santro",
+      "Tucson",
+      "Venue",
+      "Verna",
+      "i10",
+      "i20"
+    ],
+    "Isuzu": [
+      "D-Max",
+      "MUX"
+    ],
+    "Jaguar": [
+      "F-PACE",
+      "XE",
+      "XF"
+    ],
+    "Jeep": [
+      "Compass",
+      "Wrangler"
+    ],
+    "Kia": [
+      "Carnival",
+      "Seltos"
+    ],
+    "Land Rover": [
+      "Rover"
+    ],
+    "Lexus": [
+      "ES",
+      "NX",
+      "RX"
+    ],
+    "MG": [
+      "Hector"
+    ],
+    "Mahindra": [
+      "Alturas",
+      "Bolero",
+      "KUV",
+      "KUV100",
+      "Marazzo",
+      "Scorpio",
+      "Thar",
+      "XUV300",
+      "XUV500"
+    ],
+    "Maruti": [
+      "Alto",
+      "Baleno",
+      "Celerio",
+      "Ciaz",
+      "Dzire LXI",
+      "Dzire VXI",
+      "Dzire ZXI",
+      "Eeco",
+      "Ertiga",
+      "Ignis",
+      "S-Presso",
+      "Swift",
+      "Swift Dzire",
+      "Vitara",
+      "Wagon R",
+      "XL6"
+    ],
+    "Maserati": [
+      "Ghibli",
+      "Quattroporte"
+    ],
+    "Mercedes-Benz": [
+      "C",
+      "C-Class",
+      "CLS",
+      "E-Class",
+      "GL-Class",
+      "GLS",
+      "S-Class"
+    ],
+    "Mini": [
+      "Cooper"
+    ],
+    "Nissan": [
+      "Kicks",
+      "X-Trail"
+    ],
+    "Porsche": [
+      "Cayenne",
+      "Macan",
+      "Panamera"
+    ],
+    "Renault": [
+      "Duster",
+      "KWID",
+      "Triber"
+    ],
+    "Rolls-Royce": [
+      "Ghost"
+    ],
+    "Skoda": [
+      "Octavia",
+      "Rapid",
+      "Superb"
+    ],
+    "Tata": [
+      "Altroz",
+      "Harrier",
+      "Hexa",
+      "Nexon",
+      "Safari",
+      "Tiago",
+      "Tigor"
+    ],
+    "Toyota": [
+      "Camry",
+      "Fortuner",
+      "Glanza",
+      "Innova",
+      "Yaris"
+    ],
+    "Volkswagen": [
+      "Polo",
+      "Vento"
+    ],
+    "Volvo": [
+      "S90",
+      "XC",
+      "XC60",
+      "XC90"
+    ]
+  },
+  "valid_fuel_types": [
+    "Petrol",
+    "Diesel",
+    "CNG",
+    "LPG",
+    "Electric"
+  ],
+  "valid_transmission_types": [
+    "Manual",
+    "Automatic"
+  ],
+  "valid_seller_types": [
+    "Individual",
+    "Dealer",
+    "Trustmark Dealer"
+  ]
+}

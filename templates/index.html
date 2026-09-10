@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CarPrice AI — Get an AI-powered estimate of your car's current market price using machine learning. Accurate predictions for Indian used car market.">
+    <title>CarPrice AI — Know Your Car's True Market Value</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+</head>
+<body>
+
+    <!-- ── Navigation ──────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand" onclick="navigateTo('predict'); return false;">
+                <div class="nav-brand-icon">🚗</div>
+                CarPrice AI
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><button class="nav-link active" data-page="predict">Predict</button></li>
+                <li><button class="nav-link" data-page="history">History</button></li>
+                <li><button class="nav-link" data-page="analytics">Analytics</button></li>
+                <li><button class="nav-link" data-page="model">Model</button></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── Toast Container ─────────────────────────────── -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ── Main Content ────────────────────────────────── -->
+    <main class="main-content">
+
+        <!-- ════════════════════════════════════════════════
+             PREDICT PAGE
+             ════════════════════════════════════════════════ -->
+        <section class="page-section active" id="page-predict">
+
+            <!-- Hero -->
+            <div class="hero">
+                <div class="hero-badge">⚡ AI-Powered Valuation Engine</div>
+                <h1>Know Your Car's True Market Value</h1>
+                <p>Get an instant, data-driven estimate of your car's current market price. Powered by machine learning trained on 15,000+ real transactions.</p>
+            </div>
+
+            <!-- Prediction Form -->
+            <form id="predictionForm" autocomplete="off">
+
+                <!-- Vehicle Details -->
+                <div class="card mb-xl">
+                    <div class="card-header">
+                        <div class="card-icon blue">🚘</div>
+                        <div>
+                            <div class="card-title">Vehicle Details</div>
+                            <div class="card-subtitle">Basic information about your car</div>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="brand">Brand</label>
+                            <select class="form-select" id="brand" name="brand" required>
+                                <option value="">Select Brand</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="model">Model</label>
+                            <select class="form-select" id="model" name="model" required>
+                                <option value="">Select Model</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="year">Manufacturing Year</label>
+                            <input class="form-input" type="number" id="year" name="year" min="1990" max="2026" placeholder="e.g. 2021" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usage -->
+                <div class="card mb-xl">
+                    <div class="card-header">
+                        <div class="card-icon green">📍</div>
+                        <div>
+                            <div class="card-title">Usage</div>
+                            <div class="card-subtitle">How the vehicle has been used</div>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="kilometers_driven">Kilometers Driven</label>
+                            <input class="form-input" type="number" id="kilometers_driven" name="kilometers_driven" min="0" max="1000000" placeholder="e.g. 25000" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="seller_type">Seller Type</label>
+                            <select class="form-select" id="seller_type" name="seller_type">
+                                <option value="Individual">Individual</option>
+                                <option value="Dealer">Dealer</option>
+                                <option value="Trustmark Dealer">Trustmark Dealer</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specifications -->
+                <div class="card mb-xl">
+                    <div class="card-header">
+                        <div class="card-icon amber">⚙️</div>
+                        <div>
+                            <div class="card-title">Specifications</div>
+                            <div class="card-subtitle">Technical specifications of the vehicle</div>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="fuel_type">Fuel Type</label>
+                            <select class="form-select" id="fuel_type" name="fuel_type" required>
+                                <option value="">Select Fuel Type</option>
+                                <option value="Petrol">Petrol</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="CNG">CNG</option>
+                                <option value="LPG">LPG</option>
+                                <option value="Electric">Electric</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="transmission">Transmission</label>
+                            <select class="form-select" id="transmission" name="transmission" required>
+                                <option value="">Select Transmission</option>
+                                <option value="Manual">Manual</option>
+                                <option value="Automatic">Automatic</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="engine">Engine (cc)</label>
+                            <input class="form-input" type="number" id="engine" name="engine" min="100" max="10000" placeholder="e.g. 1197" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="mileage">Mileage (kmpl)</label>
+                            <input class="form-input" type="number" id="mileage" name="mileage" min="0" max="100" step="0.1" placeholder="e.g. 23.2" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="power">Power (bhp)</label>
+                            <input class="form-input" type="number" id="power" name="power" min="1" max="1500" step="0.1" placeholder="e.g. 88.5" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="seats">Seats</label>
+                            <select class="form-select" id="seats" name="seats" required>
+                                <option value="">Select Seats</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="5" selected>5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary btn-full" id="predictBtn">
+                    ⚡ Predict Car Price
+                </button>
+            </form>
+
+            <!-- Prediction Result -->
+            <div class="result-container mt-xl" id="predictionResult">
+                <div class="result-card">
+                    <div class="result-label">Estimated Market Value</div>
+                    <div class="result-price" id="resultPrice">—</div>
+                    <div class="result-meta">
+                        <span class="result-meta-item" id="resultModel">—</span>
+                        <span class="result-meta-item">Model <span id="resultVersion">—</span></span>
+                        <span class="result-meta-item" id="resultTimestamp">—</span>
+                    </div>
+                    <div class="result-details">
+                        <div class="result-detail">
+                            <div class="result-detail-label">Year</div>
+                            <div class="result-detail-value" id="detailYear">—</div>
+                        </div>
+                        <div class="result-detail">
+                            <div class="result-detail-label">Fuel</div>
+                            <div class="result-detail-value" id="detailFuel">—</div>
+                        </div>
+                        <div class="result-detail">
+                            <div class="result-detail-label">Transmission</div>
+                            <div class="result-detail-value" id="detailTransmission">—</div>
+                        </div>
+                        <div class="result-detail">
+                            <div class="result-detail-label">Odometer</div>
+                            <div class="result-detail-value" id="detailKm">—</div>
+                        </div>
+                        <div class="result-detail">
+                            <div class="result-detail-label">Engine</div>
+                            <div class="result-detail-value" id="detailEngine">—</div>
+                        </div>
+                        <div class="result-detail">
+                            <div class="result-detail-label">Power</div>
+                            <div class="result-detail-value" id="detailPower">—</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ════════════════════════════════════════════════
+             HISTORY PAGE
+             ════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-history">
+            <div class="section-header">
+                <h2>Prediction History</h2>
+                <p>Review all your previous car price predictions</p>
+            </div>
+
+            <div class="toolbar">
+                <input type="text" class="search-input" id="historySearch" placeholder="Search predictions..." oninput="filterHistory()">
+            </div>
+
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Car</th>
+                            <th>Year</th>
+                            <th>Fuel</th>
+                            <th>Transmission</th>
+                            <th>Km Driven</th>
+                            <th>Predicted Price</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                        <tr>
+                            <td colspan="7">
+                                <div class="empty-state">
+                                    <div class="empty-state-icon">📊</div>
+                                    <div class="empty-state-title">No predictions yet</div>
+                                    <div class="empty-state-text">Make your first prediction to see it here</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination" id="historyPagination"></div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════
+             ANALYTICS PAGE
+             ════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-analytics">
+            <div class="section-header">
+                <h2>Analytics Dashboard</h2>
+                <p>Insights from your prediction activity</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue">📊</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="statTotal">0</div>
+                        <div class="stat-label">Total Predictions</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">💰</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="statAvgPrice">—</div>
+                        <div class="stat-label">Average Price</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon amber">🏆</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="statTopBrand">—</div>
+                        <div class="stat-label">Most Predicted Brand</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon purple">📈</div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="statPriceRange">—</div>
+                        <div class="stat-label">Price Range</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon blue">ℹ️</div>
+                    <div>
+                        <div class="card-title">About Analytics</div>
+                    </div>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7;">
+                    These analytics are computed from your prediction history. As you make more predictions,
+                    the dashboard will show richer insights including brand distribution, price trends, and
+                    usage patterns. Start making predictions to populate this dashboard.
+                </p>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════
+             MODEL PAGE
+             ════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-model">
+            <div class="section-header">
+                <h2>Model Information</h2>
+                <p>Understanding the ML engine behind CarPrice AI</p>
+            </div>
+
+            <!-- Model identity -->
+            <div class="card mb-xl">
+                <div class="card-header">
+                    <div class="card-icon blue">🤖</div>
+                    <div>
+                        <div class="card-title" id="modelName">Loading...</div>
+                        <div class="card-subtitle">
+                            <span id="modelVersion">—</span> ·
+                            Trained <span id="modelTrainDate">—</span> ·
+                            <span id="modelDatasetRows">—</span> training records
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Metrics -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value" id="metricR2">—</div>
+                    <div class="metric-label">R² Score</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="metricMAE">—</div>
+                    <div class="metric-label">Mean Abs. Error</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="metricRMSE">—</div>
+                    <div class="metric-label">RMSE</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="metricMAPE">—</div>
+                    <div class="metric-label">MAPE</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="metricLatency">—</div>
+                    <div class="metric-label">Inference Latency</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="metricCVR2">—</div>
+                    <div class="metric-label">Cross-Val R²</div>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="card mb-xl">
+                <div class="card-header">
+                    <div class="card-icon green">⚡</div>
+                    <div>
+                        <div class="card-title">How does the prediction work?</div>
+                        <div class="card-subtitle">The pipeline behind every price estimate</div>
+                    </div>
+                </div>
+                <div class="pipeline-flow">
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-icon">📝</div>
+                        <div class="pipeline-step-label">Your Car Details</div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-icon">🔧</div>
+                        <div class="pipeline-step-label">Feature Engineering</div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-icon">⚙️</div>
+                        <div class="pipeline-step-label">Data Processing</div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-icon">🤖</div>
+                        <div class="pipeline-step-label">ML Model</div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-icon">💰</div>
+                        <div class="pipeline-step-label">Price Estimate</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model Comparison -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon amber">📊</div>
+                    <div>
+                        <div class="card-title">Model Comparison</div>
+                        <div class="card-subtitle">7 regression models were evaluated to find the best performer</div>
+                    </div>
+                </div>
+                <div class="table-container" style="border: none; box-shadow: none;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>R²</th>
+                                <th>MAE</th>
+                                <th>RMSE</th>
+                                <th>MAPE</th>
+                                <th>CV R²</th>
+                            </tr>
+                        </thead>
+                        <tbody id="comparisonBody">
+                            <tr><td colspan="6" class="text-center" style="padding: 24px; color: var(--text-tertiary);">Loading model data...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
