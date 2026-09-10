@@ -33,7 +33,7 @@ def make_prediction(input_data: dict) -> dict:
 
     # Run prediction
     predicted_price = model_service.predict(features_df)
-    logger.info("Predicted price: ₹%,.0f", predicted_price)
+    logger.info("Predicted price: ₹%s", format(predicted_price, ",.0f"))
 
     # Save to database
     prediction_record = Prediction(
