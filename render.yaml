@@ -1,7 +1,8 @@
 services:
   - type: web
     name: car-price-prediction
-    env: python
+    runtime: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn --bind 0.0.0.0:$PORT -w 2 'app:create_app()'
     envVars:
