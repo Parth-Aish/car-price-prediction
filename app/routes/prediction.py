@@ -41,8 +41,10 @@ def predict():
         return jsonify(result), 200
 
     except Exception as e:
+        import traceback
+        err_msg = str(e) + " | " + traceback.format_exc()
         logger.exception("Prediction failed: %s", e)
-        raise APIError("Prediction failed. Please try again.", 500)
+        raise APIError(f"Prediction failed: {err_msg}", 500)
 
 
 @prediction_bp.route("/api/predictions", methods=["GET"])
